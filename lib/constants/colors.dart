@@ -1,0 +1,1 @@
+const STAR_COLOR = 0xFFf2C611;

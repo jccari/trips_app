@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'place.dart';
+import 'components/place/index.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,8 +29,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
