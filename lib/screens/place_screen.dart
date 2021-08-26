@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:trips_app/components/reviews/reviews_list.dart';
-import '../components/place/index.dart';
+import 'package:trips_app/widgets/reviews/reviews_list.dart';
+import '../widgets/place/index.dart';
 
 class PlaceScreen extends StatelessWidget {
   const PlaceScreen({Key? key}) : super(key: key);
