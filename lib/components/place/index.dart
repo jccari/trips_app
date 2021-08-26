@@ -23,13 +23,13 @@ class Place extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final title_starts = Row(
+    final titleStarts = Row(
       children: <Widget>[new TitlePlace(this.name), generateStars()],
     );
 
     return Column(
       children: <Widget>[
-        title_starts,
+        titleStarts,
         new DescriptionPlace(this.description),
       ],
     );
