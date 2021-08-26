@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 
 class Star extends StatelessWidget {
-  bool filled;
+  final bool filled;
 
   Star(this.filled);
 

@@ -4,11 +4,11 @@ import 'title_place.dart';
 import 'description_place.dart';
 
 class Place extends StatelessWidget {
-  String name;
-  int stars;
-  String description;
+  final String name;
+  final int stars;
+  final String description;
 
-  int maxStars = 5;
+  final int maxStars = 5;
 
   Place(this.name, this.stars, this.description);
 
@@ -23,8 +23,6 @@ class Place extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-
     final title_starts = Row(
       children: <Widget>[new TitlePlace(this.name), generateStars()],
     );

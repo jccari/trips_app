@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
-  String description;
+  final String description;
 
   DescriptionPlace(this.description);
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       margin: EdgeInsets.only(
         top: 10.0,
         left: 20.0,
