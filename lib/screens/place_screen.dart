@@ -17,7 +17,7 @@ class PlaceScreen extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            Place(
+            PlaceWidget(
               'Duwili Ellaaa',
               3,
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur condimentum ligula et hendrerit. Phasellus consectetur vel lorem cursus molestie. Fusce faucibus mi nec leo imperdiet, et elementum lorem dictum. Quisque tincidunt tortor a sapien porttitor tempus. Suspendisse non pharetra ex. In hac habitasse platea dictumst. Nunc tincidunt elit metus, in semper est hendrerit ut. Fusce hendrerit euismod massa, ac finibus purus egestas id.',
