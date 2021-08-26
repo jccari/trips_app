@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../common/star.dart';
+import '../common/star_list.dart';
 import 'title_place.dart';
 import 'description_place.dart';
 
@@ -8,23 +8,12 @@ class Place extends StatelessWidget {
   final int stars;
   final String description;
 
-  final int maxStars = 5;
-
   Place(this.name, this.stars, this.description);
-
-  Widget generateStars() {
-    List<Widget> filledStars = List.filled(this.stars, new Star(true));
-    List<Widget> emptyStars =
-        List.filled(this.maxStars - this.stars, new Star(false));
-    return Row(
-      children: filledStars + emptyStars,
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
     final titleStarts = Row(
-      children: <Widget>[new TitlePlace(this.name), generateStars()],
+      children: <Widget>[new TitlePlace(this.name), StarList(stars)],
     );
 
     return Column(
