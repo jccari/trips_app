@@ -20,7 +20,11 @@ class ReviewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(20.0),
+      margin: EdgeInsets.only(
+        top: 10.0,
+        left: 20.0,
+        right: 20.0,
+      ),
       child: Row(
         children: [
           UserPhotoWidget(this.userPhotoSrc),
