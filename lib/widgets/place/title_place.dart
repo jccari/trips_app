@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class TitlePlace extends StatelessWidget {
+class TitlePlaceWidget extends StatelessWidget {
   final String text;
 
-  TitlePlace(this.text);
+  TitlePlaceWidget(this.text);
 
   @override
   Widget build(BuildContext context) {

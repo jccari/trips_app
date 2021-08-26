@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 
-class Star extends StatelessWidget {
+class StarWidget extends StatelessWidget {
   final bool filled;
 
-  Star(this.filled);
+  StarWidget(this.filled);
 
   @override
   Widget build(BuildContext context) {

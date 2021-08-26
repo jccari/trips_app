@@ -10,9 +10,9 @@ class StarList extends StatelessWidget {
   StarList(this.stars);
 
   Widget generateStars() {
-    List<Widget> filledStars = List.filled(this.stars, new Star(true));
+    List<Widget> filledStars = List.filled(this.stars, new StarWidget(true));
     List<Widget> emptyStars =
-        List.filled(this.maxStars - this.stars, new Star(false));
+        List.filled(this.maxStars - this.stars, new StarWidget(false));
     return Row(
       children: filledStars + emptyStars,
     );

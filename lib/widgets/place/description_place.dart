@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class DescriptionPlace extends StatelessWidget {
+class DescriptionPlaceWidget extends StatelessWidget {
   final String description;
 
-  DescriptionPlace(this.description);
+  DescriptionPlaceWidget(this.description);
 
   @override
   Widget build(BuildContext context) {
