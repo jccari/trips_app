@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'components/place/index.dart';
 import 'screens/place_screen.dart';
 
 void main() {
