@@ -18,7 +18,7 @@ class DetailAppBarWidget extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.only(
-                top: 30.0,
+                top: 50.0,
                 left: 20.0,
               ),
               child: Align(
