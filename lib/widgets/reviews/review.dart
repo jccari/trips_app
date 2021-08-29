@@ -28,7 +28,12 @@ class ReviewWidget extends StatelessWidget {
       child: Row(
         children: [
           UserPhotoWidget(source: this.userPhotoSrc),
-          ReviewContentWidget(this.userName, "Este es un bonito lugar", 3, 5),
+          ReviewContentWidget(
+            userName: this.userName,
+            content: "Este es un bonito lugar",
+            reviewsNumber: 3,
+            photosNumber: 5,
+          ),
         ],
       ),
     );
