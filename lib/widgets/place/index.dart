@@ -24,7 +24,9 @@ class PlaceWidget extends StatelessWidget {
     return Column(
       children: <Widget>[
         titleStarts,
-        new DescriptionPlaceWidget(this.description),
+        DescriptionPlaceWidget(
+          description: this.description,
+        ),
       ],
     );
   }
