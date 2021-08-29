@@ -28,15 +28,16 @@ class DetailAppBarWidget extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.only(
-                top: 30.0,
+                top: 45.0,
                 left: 20.0,
+                bottom: 15.0,
               ),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   this.title,
                   style: TextStyle(
-                    fontSize: 30.0,
+                    fontSize: 35.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),

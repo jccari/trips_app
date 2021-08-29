@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class CarrouselWidget extends StatelessWidget {
-  List<String> images;
+  final List<String> images;
 
   CarrouselWidget({required this.images});
 
