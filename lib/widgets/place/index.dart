@@ -8,7 +8,11 @@ class PlaceWidget extends StatelessWidget {
   final int stars;
   final String description;
 
-  PlaceWidget(this.name, this.stars, this.description);
+  PlaceWidget({
+    required this.name,
+    required this.stars,
+    required this.description,
+  });
 
   @override
   Widget build(BuildContext context) {
