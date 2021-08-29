@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 
 class StarWidget extends StatelessWidget {
-  final bool filled;
+  final bool isFull;
 
-  StarWidget(this.filled);
+  StarWidget({required this.isFull});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class StarWidget extends StatelessWidget {
         right: 3.0,
       ),
       child: Icon(
-        this.filled ? Icons.star : Icons.star_border,
+        this.isFull ? Icons.star : Icons.star_border,
         color: Color(STAR_COLOR),
       ),
     );

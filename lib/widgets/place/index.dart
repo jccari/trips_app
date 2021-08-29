@@ -13,7 +13,12 @@ class PlaceWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final titleStarts = Row(
-      children: <Widget>[new TitlePlaceWidget(this.name), StarList(stars)],
+      children: <Widget>[
+        new TitlePlaceWidget(this.name),
+        StarList(
+          stars: stars,
+        ),
+      ],
     );
 
     return Column(
