@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class UserPhotoWidget extends StatelessWidget {
-  String photoSource;
+  String source;
 
-  UserPhotoWidget(this.photoSource);
+  UserPhotoWidget({required this.source});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class UserPhotoWidget extends StatelessWidget {
       width: 80.0,
       height: 80.0,
       child: CircleAvatar(
-        backgroundImage: AssetImage(this.photoSource),
+        backgroundImage: AssetImage(this.source),
       ),
     );
   }
