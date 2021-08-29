@@ -14,7 +14,9 @@ class PlaceWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final titleStarts = Row(
       children: <Widget>[
-        new TitlePlaceWidget(this.name),
+        TitlePlaceWidget(
+          label: this.name,
+        ),
         StarList(
           stars: stars,
         ),

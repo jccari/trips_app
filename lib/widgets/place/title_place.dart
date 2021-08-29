@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class TitlePlaceWidget extends StatelessWidget {
-  final String text;
+  final String label;
 
-  TitlePlaceWidget(this.text);
+  TitlePlaceWidget({required this.label});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class TitlePlaceWidget extends StatelessWidget {
         right: 20.0,
       ),
       child: Text(
-        this.text,
+        this.label,
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 30,
