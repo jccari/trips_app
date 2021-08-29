@@ -11,8 +11,8 @@ class StarList extends StatelessWidget {
 
   Widget generateStars() {
     List<Widget> fullStars = List.filled(this.stars, StarWidget(isFull: true));
-    List<Widget> emptyStars =
-        List.filled(this.maxStars - this.stars, StarWidget(isFull: false));
+    List<Widget> emptyStars = List.filled(
+        (this.maxStars - this.stars).abs(), StarWidget(isFull: false));
     return Row(children: fullStars + emptyStars);
   }
 
