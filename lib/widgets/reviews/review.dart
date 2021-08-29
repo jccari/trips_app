@@ -9,13 +9,13 @@ class ReviewWidget extends StatelessWidget {
   final int reviewsNumber;
   final int photosNumber;
 
-  ReviewWidget(
-    this.userPhotoSrc,
-    this.userName,
-    this.content,
-    this.reviewsNumber,
-    this.photosNumber,
-  );
+  ReviewWidget({
+    required this.userPhotoSrc,
+    required this.userName,
+    required this.content,
+    required this.reviewsNumber,
+    required this.photosNumber,
+  });
 
   @override
   Widget build(BuildContext context) {
