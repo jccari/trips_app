@@ -22,7 +22,7 @@ class DetailAppBarWidget extends StatelessWidget {
     return Stack(
       children: [
         GradientBackgroundWidget(
-          height: 250.0,
+          height: 275.0,
         ),
         Column(
           children: [

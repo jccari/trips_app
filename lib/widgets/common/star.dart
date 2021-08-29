@@ -10,7 +10,7 @@ class StarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: 353.0,
         right: 3.0,
       ),
       child: Icon(
