@@ -11,9 +11,21 @@ class _HomeScreenState extends State<HomeScreen> {
   int _currentTabIndex = 0;
 
   void _onTabBottomNavigationBarItem(int index) {
+    _changeScreen(index);
     setState(() {
       _currentTabIndex = index;
     });
+  }
+
+  void _changeScreen(int index) {
+    switch (index) {
+      case 0:
+        Navigator.pushNamed(context, '/');
+        break;
+      case 1:
+        Navigator.pushNamed(context, '/place');
+        break;
+    }
   }
 
   @override
