@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trips_app/routes.dart' as routes;
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -20,10 +21,10 @@ class _HomeScreenState extends State<HomeScreen> {
   void _changeScreen(int index) {
     switch (index) {
       case 0:
-        Navigator.pushNamed(context, '/');
+        Navigator.pushNamed(context, routes.homeScreen);
         break;
       case 1:
-        Navigator.pushNamed(context, '/place');
+        Navigator.pushNamed(context, routes.placeScreen);
         break;
     }
   }

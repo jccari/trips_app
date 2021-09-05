@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'screens/place_screen.dart';
-import 'screens/home_screen.dart';
+
+import 'routes.dart' as routes;
+// import 'screens/place_screen.dart';
+// import 'screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,11 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => HomeScreen(),
-        '/place': (context) => PlaceScreen(),
-      },
+      initialRoute: routes.homeScreen,
+      onGenerateRoute: routes.controller,
     );
   }
 }
