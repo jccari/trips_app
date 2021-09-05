@@ -28,6 +28,11 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
       case 1:
         Navigator.pushNamed(context, routes.placeScreen);
         break;
+      case 2:
+        Navigator.pushNamed(context, routes.perfilScreen);
+        break;
+      default:
+        throw ("Error in changeSreen");
     }
   }
 
