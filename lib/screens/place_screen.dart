@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:trips_app/widgets/reviews/reviews_list.dart';
+import 'package:trips_app/widgets/common/bottom_navigation_bar.dart';
 import '../widgets/place/index.dart';
 import '../widgets/detail-appbar/index.dart';
 import '../widgets/button/index.dart';
@@ -30,6 +31,7 @@ class PlaceScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBarWidget(),
     );
   }
 }
