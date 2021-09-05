@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../gradient-background/index.dart';
+import '../common/gradient_background.dart';
 import '../carrousel/carrousel.dart';
 
 const List<String> imageList = [
