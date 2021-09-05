@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/place_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,6 +32,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return PlaceScreen();
+    return HomeScreen();
   }
 }
