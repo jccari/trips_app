@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:trips_app/routes.dart' as routes;
 
 class BottomNavigationBarWidget extends StatefulWidget {
-  const BottomNavigationBarWidget({Key? key}) : super(key: key);
+  BottomNavigationBarWidget({Key? key}) : super(key: key);
 
   @override
   _BottomNavigationBarWidgetState createState() =>
@@ -11,7 +11,7 @@ class BottomNavigationBarWidget extends StatefulWidget {
 }
 
 class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
-  int currentTabIndex = 0;
+  static int currentTabIndex = 0;
 
   void onTabBottomNavigationBarItem(int index) {
     _changeScreen(index);
